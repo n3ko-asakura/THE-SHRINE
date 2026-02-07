@@ -137,6 +137,7 @@ UPROGS=\
 	$U/_rm\
 	$U/_sh\
 	$U/_grind\
+	$U/_usertests\
 	$U/_wc\
 	$U/_zombie\
 	lab1/_sleep\
@@ -144,6 +145,10 @@ UPROGS=\
 	lab2/_hello\
 	lab2/_sixfive\
 	lab2/_xargs\
+	lab3/_handshake\
+	lab3/_secret\
+	lab3/_sniffer\
+	lab3/_monitor\
 
 fs.img: mkfs/mkfs README.md $(UPROGS)
 	mkfs/mkfs fs.img README.md $(UPROGS)

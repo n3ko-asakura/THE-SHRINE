@@ -86,6 +86,32 @@ $ (echo arg1 ; echo arg2 arg3) | xargs -n 2 echo base
 // echo base arg3
 ```
 
+## Lab 3
+
+### Task 1: handshake
+
+file: [lab3/handshake.c](lab3/handshake.c)
+
+### Task 2: sniffer
+
+files:
+
+- [lab3/sniffer.c](lab3/sniffer.c) (solution)
+- [lab3/secret.c](lab3/secret.c) (target to hack!)
+- [kernel/kalloc.c](kernel/kalloc.c) (add vulnerability)
+
+### Task 3: monitor
+
+Refer to [hello](#task-1-hello) for how to implement a syscall.
+
+files:
+
+- [lab3/monitor.c](lab3/monitor.c)
+- [kernel/sysproc.c](kernel/sysproc.c) (implement monitor syscall)
+- [kernel/proc.c](kernel/proc.c) (modified kfork())
+- [kernel/proc.h](kernel/proc.h) (modified struct proc)
+- [kernel/syscall.c](kernel/syscall.c) (modified syscall())
+
 ## Contributing
 
 1. Create a new lab\* folder for your lab solutions
